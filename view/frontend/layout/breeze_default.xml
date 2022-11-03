@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="breeze.js">
+            <arguments>
+                <argument name="bundles" xsi:type="array">
+                    <item name="product" xsi:type="array">
+                        <item name="items" xsi:type="array">
+                            <item name="Lof_EstimateShippingRate/js/shipping" xsi:type="array">
+                                <!-- Path to file with component declaration -->
+                                <item name="path" xsi:type="string">Swissup_BreezeLandofcoderEstimateShippingRate/js/shipping</item>
+
+                                <!-- A flag that tells Breeze if the component should be used -->
+                                <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isEnabled">
+                                    <param name="path">lof_estimateshippingrate/general/enable</param>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
